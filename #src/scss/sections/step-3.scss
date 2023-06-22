@@ -1,0 +1,25 @@
+.step-3 {
+    min-height: 939px;
+    background-image: url('../img/bg-4.png');
+    background-size: cover;
+    background-position: center;
+    padding-top: 388px;
+    padding-bottom: 20px;
+    &__sub-title {
+        color: #333;
+        margin-bottom: 40px;
+        span {
+            color: #fecc01;
+        }
+    }
+    &-text {
+        max-width: 696px;
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+        margin-bottom: 40px;
+    }
+    &__text {
+        color: #333333;
+    }
+}

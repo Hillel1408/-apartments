@@ -1,0 +1,30 @@
+.step-1 {
+    padding-top: 120px;
+    padding-bottom: 120px;
+    min-height: 1144px;
+    background-image: url('../img/bg-2.jpg');
+    background-size: cover;
+    &__title {
+        margin-bottom: 40px;
+    }
+    &__small-text {
+        max-width: 982px;
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+        margin-bottom: 40px;
+    }
+    ul {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        li {
+            font-weight: 900;
+            text-transform: uppercase;
+            color: #333;
+            display: flex;
+            align-items: center;
+            gap: 20px;
+        }
+    }
+}
