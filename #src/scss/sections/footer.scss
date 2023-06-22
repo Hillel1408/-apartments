@@ -1,0 +1,36 @@
+.footer {
+    background-color: #171717;
+    padding-top: 112px;
+    padding-bottom: 120px;
+    text-align: center;
+    &__sub-title {
+        font-weight: 900;
+        line-height: 130%;
+        text-transform: uppercase;
+        color: white;
+        font-size: 40px;
+        span {
+            color: #fecc01;
+        }
+    }
+    img {
+        display: block;
+        margin: 0 auto;
+        margin-bottom: 16px;
+        margin-top: 4px;
+        transform: translateX(-150px);
+    }
+    &__text {
+        max-width: 1056px;
+        margin: 0 auto;
+        margin-top: 50px;
+        margin-bottom: 71px;
+        span {
+            color: #fecc01;
+        }
+        i {
+            font-style: normal;
+            color: #f04438;
+        }
+    }
+}
