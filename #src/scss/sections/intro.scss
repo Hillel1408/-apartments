@@ -1,0 +1,35 @@
+.intro {
+    padding-top: 163px;
+    padding-bottom: 162px;
+    background-image: url('../img/bg-1.jpg');
+    &-block {
+        max-width: 1148px;
+        margin-left: auto;
+        padding: 60px;
+        background: rgba(0, 0, 0, 0.35);
+        backdrop-filter: blur(17.5px);
+        h1 {
+            color: #fff;
+            font-size: 64px;
+            font-weight: 900;
+            line-height: 130%;
+            margin-bottom: 40px;
+            span {
+                color: #fecc01;
+            }
+        }
+    }
+    &-flex {
+        display: flex;
+        gap: 40px;
+        align-items: center;
+        img {
+            display: block;
+            margin-top: 4px;
+            margin-bottom: 16px;
+        }
+        & > div:last-child {
+            flex: 1 1 440px;
+        }
+    }
+}
