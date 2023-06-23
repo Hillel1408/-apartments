@@ -1,0 +1,32 @@
+.step-8 {
+    padding-top: 120px;
+    padding-bottom: 120px;
+    background-color: #f4f6f7;
+    background-image: url('../img/bg-7.png');
+    background-repeat: no-repeat;
+    background-position: bottom left;
+    &-block {
+        max-width: 903px;
+        margin-left: auto;
+    }
+    &-text {
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+        margin-top: 40px;
+        p {
+            color: #333;
+        }
+    }
+    h3 {
+        font-weight: 900;
+        line-height: 130%;
+        text-transform: uppercase;
+        color: #333;
+        font-size: 24px;
+        margin-top: 40px;
+        span {
+            color: #fecc01;
+        }
+    }
+}

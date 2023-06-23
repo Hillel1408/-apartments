@@ -1,0 +1,27 @@
+.pdf {
+    background-color: #171717;
+    padding-top: 120px;
+    padding-bottom: 150px;
+    &__title {
+        text-align: center;
+        margin-bottom: 40px;
+    }
+    &__text {
+        max-width: 982px;
+        text-align: center;
+        margin: 0 auto;
+    }
+    &__subtitle {
+        text-align: center;
+        margin-top: 60px;
+        margin-bottom: 20px;
+    }
+    &-flex {
+        max-width: 982px;
+        text-align: center;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+}
