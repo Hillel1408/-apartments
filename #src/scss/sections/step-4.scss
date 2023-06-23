@@ -13,6 +13,26 @@
         display: flex;
         gap: 82px;
         margin-bottom: 60px;
+        p {
+            position: relative;
+            z-index: 1;
+            &:first-child {
+                &::before {
+                    content: url('../img/img-2.png');
+                    position: absolute;
+                    transform: translateY(-30%);
+                    z-index: -1;
+                }
+            }
+            &:last-child {
+                &::before {
+                    content: url('../img/img-3.png');
+                    position: absolute;
+                    transform: translateY(-55%) translateX(100px);
+                    z-index: -1;
+                }
+            }
+        }
     }
     &__text {
         font-weight: 900;
@@ -23,6 +43,8 @@
     }
     &__small-text,
     &__text {
+        position: relative;
+        z-index: 1;
         span {
             color: #f04438;
         }
