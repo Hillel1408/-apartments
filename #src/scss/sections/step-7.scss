@@ -1,0 +1,54 @@
+.step-7 {
+    padding-top: 118px;
+    padding-bottom: 120px;
+    &__title {
+        font-size: 90px;
+        margin-bottom: 60px;
+    }
+    &-grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        column-gap: 20px;
+        row-gap: 40px;
+        margin-bottom: 40px;
+        & > div {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+            &.spn-2 {
+                grid-column: span 2;
+            }
+        }
+    }
+    &-flex {
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+        span {
+            color: #333;
+            font-size: 24px;
+            font-weight: 900;
+            line-height: 130%;
+            text-transform: uppercase;
+            b {
+                color: #fecc01;
+            }
+        }
+    }
+    &__btn {
+        display: block;
+        margin: 0 auto;
+        margin-top: 16px;
+    }
+    &__subtitle {
+        color: #333333;
+        margin-top: 40px;
+        margin-bottom: 4px;
+        text-align: center;
+    }
+    &__img {
+        margin: 0 auto;
+        display: block;
+        transform: translateX(-150px);
+    }
+}
