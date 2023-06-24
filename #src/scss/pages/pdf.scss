@@ -1,7 +1,16 @@
 .pdf {
-    background-color: #171717;
     padding-top: 120px;
     padding-bottom: 150px;
+    position: relative;
+    &::after {
+        content: url('../img/bg-8.png');
+        position: absolute;
+        bottom: 0;
+        right: 0;
+    }
+    &-wrapper {
+        background-color: #171717;
+    }
     &__title {
         text-align: center;
         margin-bottom: 40px;
@@ -23,5 +32,81 @@
         display: flex;
         flex-direction: column;
         gap: 20px;
+    }
+    &-grid {
+        margin-top: 40px;
+        display: grid;
+        grid-template-columns: 616px 616px;
+        gap: 20px;
+        justify-content: center;
+        margin-bottom: 120px;
+        & > div {
+            background: #1d1e21;
+            padding: 40px;
+            display: flex;
+            flex-direction: column;
+            align-items: baseline;
+            gap: 30px;
+            &:first-child {
+                ul {
+                    li {
+                        &:first-child {
+                            flex: 1 1 auto;
+                        }
+                        &:nth-child(5) {
+                            flex: 1 1 auto;
+                        }
+                    }
+                }
+            }
+        }
+        ul {
+            display: flex;
+            flex-direction: column;
+            gap: 30px;
+            flex: 1 1 auto;
+            li {
+                color: white;
+                position: relative;
+                padding-left: 34px;
+                img {
+                    position: absolute;
+                    left: 0;
+                }
+                span {
+                    font-weight: 900;
+                    line-height: 110%;
+                    text-transform: uppercase;
+                    font-size: 24px;
+                    font-family: '_Akrobat', sans-serif;
+                    display: block;
+                    b {
+                        color: #fecc01;
+                    }
+                }
+            }
+        }
+    }
+    &-block {
+        max-width: 1252px;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        gap: 40px;
+        align-items: baseline;
+        h2 {
+            color: #fecc01;
+        }
+    }
+    &-text {
+        max-width: 775px;
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+        p {
+            a {
+                color: #fecc01;
+            }
+        }
     }
 }
