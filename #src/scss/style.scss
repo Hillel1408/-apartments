@@ -14,6 +14,9 @@
     span {
         color: #fecc01;
     }
+    @media (max-width: 480px) {
+        font-size: 24px;
+    }
 }
 .btn {
     font-weight: 900;
@@ -24,6 +27,9 @@
     padding: 20px 40px;
     background-color: #fecc01;
     border-radius: 5px;
+    @media (max-width: 480px) {
+        font-size: 16px;
+    }
 }
 .text {
     font-weight: 900;
@@ -31,6 +37,9 @@
     font-size: 24px;
     font-family: 'Lato', sans-serif;
     color: white;
+    @media (max-width: 480px) {
+        font-size: 14px;
+    }
 }
 .title {
     font-weight: 900;
@@ -38,6 +47,12 @@
     text-transform: uppercase;
     color: #333;
     font-size: 96px;
+    @media (max-width: 768px) {
+        font-size: 72px;
+    }
+    @media (max-width: 480px) {
+        font-size: 32px;
+    }
     span {
         color: #fecc01;
     }
@@ -58,6 +73,9 @@
     font-weight: 700;
     line-height: 130%;
     color: #333;
+    @media (max-width: 480px) {
+        font-size: 14px;
+    }
 }
 
 @import './sections/intro';

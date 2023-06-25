@@ -2,11 +2,18 @@
     padding-top: 120px;
     padding-bottom: 150px;
     position: relative;
+    @media (max-width: 480px) {
+        padding-top: 50px;
+        padding-bottom: 195px;
+    }
     &::after {
         content: url('../img/bg-8.png');
         position: absolute;
         bottom: 0;
         right: 0;
+        @media (max-width: 480px) {
+            content: url('../img/bg-9.png');
+        }
     }
     &-wrapper {
         background-color: #171717;
@@ -14,16 +21,28 @@
     &__title {
         text-align: center;
         margin-bottom: 40px;
+        @media (max-width: 480px) {
+            margin-bottom: 20px;
+            text-align: left;
+        }
     }
     &__text {
         max-width: 982px;
         text-align: center;
         margin: 0 auto;
+        @media (max-width: 480px) {
+            text-align: left;
+        }
     }
     &__subtitle {
         text-align: center;
         margin-top: 60px;
         margin-bottom: 20px;
+        @media (max-width: 480px) {
+            margin-top: 20px;
+            margin-bottom: 20px;
+            text-align: left;
+        }
     }
     &-flex {
         max-width: 982px;
@@ -32,6 +51,9 @@
         display: flex;
         flex-direction: column;
         gap: 20px;
+        @media (max-width: 480px) {
+            text-align: left;
+        }
     }
     &-grid {
         margin-top: 40px;
@@ -40,6 +62,17 @@
         gap: 20px;
         justify-content: center;
         margin-bottom: 120px;
+        position: relative;
+        z-index: 1;
+        @media (max-width: 1380px) {
+            grid-template-columns: 1fr 1fr;
+        }
+        @media (max-width: 670px) {
+            grid-template-columns: 1fr;
+        }
+        @media (max-width: 480px) {
+            margin-bottom: 40px;
+        }
         & > div {
             background: #1d1e21;
             padding: 40px;
@@ -47,6 +80,10 @@
             flex-direction: column;
             align-items: baseline;
             gap: 30px;
+            @media (max-width: 480px) {
+                padding: 20px;
+                gap: 15px;
+            }
             &:first-child {
                 ul {
                     li {
@@ -59,12 +96,20 @@
                     }
                 }
             }
+            button {
+                @media (max-width: 480px) {
+                    width: 100%;
+                }
+            }
         }
         ul {
             display: flex;
             flex-direction: column;
             gap: 30px;
             flex: 1 1 auto;
+            @media (max-width: 480px) {
+                gap: 15px;
+            }
             li {
                 color: white;
                 position: relative;
@@ -72,6 +117,10 @@
                 img {
                     position: absolute;
                     left: 0;
+                    @media (max-width: 480px) {
+                        width: 18px;
+                        height: 18px;
+                    }
                 }
                 span {
                     font-weight: 900;
@@ -80,6 +129,11 @@
                     font-size: 24px;
                     font-family: '_Akrobat', sans-serif;
                     display: block;
+                    margin-bottom: 13px;
+                    @media (max-width: 480px) {
+                        font-size: 16px;
+                        margin-bottom: 10px;
+                    }
                     b {
                         color: #fecc01;
                     }
@@ -94,8 +148,13 @@
         flex-direction: column;
         gap: 40px;
         align-items: baseline;
+        position: relative;
+        z-index: 1;
         h2 {
             color: #fecc01;
+        }
+        @media (max-width: 480px) {
+            gap: 20px;
         }
     }
     &-text {
