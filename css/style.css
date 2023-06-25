@@ -617,7 +617,6 @@ body.lock {
     padding-bottom: 60px;
     min-height: auto;
     background-image: url("../img/bg-19.png");
-    background-size: contain;
     background-repeat: no-repeat;
   }
 }
