@@ -4,6 +4,13 @@
     min-height: 1144px;
     background-image: url('../img/bg-2.jpg');
     background-size: cover;
+    @media (max-width: 1670px) {
+        background-size: auto;
+        background-position: top right;
+    }
+    @media (max-width: 1520px) {
+        background-position: top center;
+    }
     @media (max-width: 480px) {
         padding-top: 60px;
         padding-bottom: 368px;
