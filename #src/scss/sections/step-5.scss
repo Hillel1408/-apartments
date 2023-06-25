@@ -2,10 +2,24 @@
     padding-top: 122px;
     padding-bottom: 120px;
     overflow: hidden;
+    position: relative;
+    @media (max-width: 480px) {
+        padding-top: 60px;
+        padding-bottom: 60px;
+        &::before {
+            content: url('../img/bg-17.png');
+            position: absolute;
+            transform: none;
+            top: 20px;
+        }
+    }
     &__title {
         margin-bottom: 69px;
         span {
             color: #f04438;
+        }
+        @media (max-width: 480px) {
+            margin-bottom: 40px;
         }
     }
     ul {
@@ -19,6 +33,14 @@
             font-size: 24px;
             color: #333;
             max-width: 700px;
+            @media (max-width: 480px) {
+                gap: 10px;
+                font-size: 16px;
+                img {
+                    width: 62px;
+                    height: 62px;
+                }
+            }
         }
     }
     &-flex {
@@ -26,6 +48,7 @@
         gap: 20px;
         justify-content: space-between;
         align-items: flex-end;
+
         & > div {
             position: relative;
             &:before {
@@ -33,10 +56,25 @@
                 position: absolute;
                 transform: translateY(-430px) translateX(-240px);
             }
+            @media (max-width: 480px) {
+                img {
+                    width: 105px;
+                }
+                &:before {
+                    display: none;
+                }
+            }
+        }
+
+        @media (max-width: 768px) {
+            flex-direction: column;
+            align-items: flex-start;
         }
     }
     &__btn {
         display: block;
         margin-top: 16px;
+        position: relative;
+        z-index: 1;
     }
 }

@@ -27,7 +27,7 @@
         transform: translateY(50vh) translateY(-50%);
         @media (max-height: 760px) {
             transform: none;
-            padding: 40px 0;
+            padding: 80px 0;
         }
         h2 {
             font-weight: 900;
@@ -103,6 +103,15 @@
         font-size: 32px;
         @media (max-width: 480px) {
             font-size: 22px;
+        }
+    }
+    &__close {
+        position: absolute;
+        right: 20px;
+        top: 20px;
+        svg {
+            width: 40px;
+            height: 40px;
         }
     }
 }

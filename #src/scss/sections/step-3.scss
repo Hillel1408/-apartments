@@ -5,6 +5,14 @@
     background-position: center;
     padding-top: 388px;
     padding-bottom: 20px;
+    @media (max-width: 480px) {
+        padding-bottom: 60px;
+        min-height: auto;
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: top;
+        background-image: url('../img/bg-18.png');
+    }
     &__sub-title {
         color: #333;
         margin-bottom: 40px;

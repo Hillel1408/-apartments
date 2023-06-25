@@ -1,6 +1,9 @@
 @import 'fonts';
 @import 'null';
 
+body.lock {
+    overflow: hidden;
+}
 .container {
     max-width: 1560px;
     margin: 0 auto;
@@ -30,8 +33,24 @@
     padding: 20px 40px;
     background-color: #fecc01;
     border-radius: 5px;
+    &.img {
+        &::before {
+            content: url('../img/icon-7.svg');
+            margin-right: 10px;
+            transform: translateY(3px);
+            display: inline-block;
+            @media (max-width: 480px) {
+                transform: none;
+            }
+        }
+        @media (max-width: 480px) {
+            display: flex;
+            align-items: center;
+        }
+    }
     @media (max-width: 480px) {
         font-size: 16px;
+        padding: 20px 20px;
     }
 }
 .text {
