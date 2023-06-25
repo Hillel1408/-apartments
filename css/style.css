@@ -378,6 +378,11 @@ body.lock {
     min-height: auto;
   }
 }
+@media (max-width: 420px) {
+  .step-1 {
+    padding-bottom: 400px;
+  }
+}
 @media (max-width: 360px) {
   .step-1 {
     padding-bottom: 372px;
