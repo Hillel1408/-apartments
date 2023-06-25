@@ -22,13 +22,20 @@
                 width: 105px;
             }
         }
-        @media (max-width: 360px) {
+        @media (max-width: 460px) {
             &:after {
                 content: url('../img/bg-16.png');
                 position: absolute;
-                left: -20px;
+                left: 0;
+                right: 0;
+                text-align: center;
                 z-index: 2;
                 bottom: -210px;
+            }
+        }
+        @media (max-width: 360px) {
+            &:after {
+                left: -20px;
             }
         }
     }
