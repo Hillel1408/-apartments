@@ -356,6 +356,17 @@ body.lock {
   background-image: url("../img/bg-2.jpg");
   background-size: cover;
 }
+@media (max-width: 1670px) {
+  .step-1 {
+    background-size: auto;
+    background-position: top right;
+  }
+}
+@media (max-width: 1520px) {
+  .step-1 {
+    background-position: top center;
+  }
+}
 @media (max-width: 480px) {
   .step-1 {
     padding-top: 60px;
