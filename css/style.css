@@ -1090,7 +1090,7 @@ body.lock {
   background-repeat: no-repeat;
   background-position: bottom left;
 }
-@media (max-width: 1300px) {
+@media (max-width: 1400px) {
   .step-8 {
     background-image: none;
   }
