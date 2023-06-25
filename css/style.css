@@ -370,12 +370,17 @@ body.lock {
 @media (max-width: 480px) {
   .step-1 {
     padding-top: 60px;
-    padding-bottom: 368px;
+    padding-bottom: 460px;
     background-image: url("../img/bg-12.jpg");
     background-size: contain;
     background-repeat: no-repeat;
     background-position: bottom;
     min-height: auto;
+  }
+}
+@media (max-width: 360px) {
+  .step-1 {
+    padding-bottom: 372px;
   }
 }
 .step-1__title {
