@@ -1472,8 +1472,14 @@ body.lock {
   bottom: 0;
   right: 0;
 }
+@media (max-width: 1330px) {
+  .pdf::after {
+    display: none;
+  }
+}
 @media (max-width: 480px) {
   .pdf::after {
+    display: block;
     content: url("../img/bg-9.png");
   }
 }
