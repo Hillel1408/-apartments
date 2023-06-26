@@ -476,7 +476,6 @@ body.lock {
   background-image: url("../img/bg-3.png");
   background-size: cover;
   background-position: center;
-  min-height: 1264px;
 }
 @media (max-width: 1520px) {
   .step-2 {
