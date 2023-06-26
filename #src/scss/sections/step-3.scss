@@ -5,8 +5,12 @@
     background-position: center;
     padding-top: 388px;
     padding-bottom: 20px;
-    @media (max-width: 480px) {
+    @media (max-width: 1260px) {
+        padding-top: 588px;
         padding-bottom: 60px;
+    }
+    @media (max-width: 480px) {
+        padding-top: 388px;
         min-height: auto;
         background-size: contain;
         background-repeat: no-repeat;
