@@ -257,9 +257,16 @@ body.lock {
   position: relative;
   overflow: hidden;
 }
+@media (max-width: 1520px) {
+  .intro {
+    padding-top: calc(
+                22px + 141 *
+                    ((100vw - 320px) / 1200)
+            );
+  }
+}
 @media (max-width: 480px) {
   .intro {
-    padding-top: 22px;
     padding-bottom: 419px;
     background-image: url("../img/bg-10.jpg");
     background-position: inherit;
