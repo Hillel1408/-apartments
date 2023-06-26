@@ -11,7 +11,11 @@
         position: absolute;
         bottom: 0;
         right: 0;
+        @media (max-width: 1330px) {
+            display: none;
+        }
         @media (max-width: 480px) {
+            display: block;
             content: url('../img/bg-9.png');
         }
     }
