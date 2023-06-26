@@ -39,14 +39,13 @@
         line-height: 130%;
         text-transform: uppercase;
         color: #333;
-        font-size: 24px;
+        @include adaptiv-font(24, 16);
         margin-top: 40px;
         span {
             color: #fecc01;
         }
         @media (max-width: 480px) {
             margin-top: 20px;
-            font-size: 16px;
         }
     }
 }

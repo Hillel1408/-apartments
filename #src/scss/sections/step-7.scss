@@ -6,13 +6,9 @@
         padding-bottom: 60px;
     }
     &__title {
-        font-size: 90px;
         margin-bottom: 60px;
-        @media (max-width: 768px) {
-            font-size: 54px;
-        }
+        @include adaptiv-font(90, 32);
         @media (max-width: 480px) {
-            font-size: 32px;
             margin-bottom: 40px;
         }
     }
@@ -58,15 +54,12 @@
         gap: 5px;
         span {
             color: #333;
-            font-size: 24px;
+            @include adaptiv-font(24, 16);
             font-weight: 900;
             line-height: 130%;
             text-transform: uppercase;
             b {
                 color: #fecc01;
-            }
-            @media (max-width: 480px) {
-                font-size: 16px;
             }
         }
     }

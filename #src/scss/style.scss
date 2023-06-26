@@ -1,5 +1,10 @@
 @import 'fonts';
 @import 'null';
+@import 'mixins';
+
+$minWidth: 360;
+$maxWidthContainer: 1520;
+$maxWidth: 1920;
 
 body.lock {
     overflow: hidden;
@@ -12,23 +17,17 @@ body.lock {
 .subtitle {
     font-weight: 900;
     line-height: 130%;
-    font-size: 40px;
+    @include adaptiv-font(40, 24);
     color: white;
     span {
         color: #fecc01;
-    }
-    @media (max-width: 768px) {
-        font-size: 32px;
-    }
-    @media (max-width: 480px) {
-        font-size: 24px;
     }
 }
 .btn {
     font-weight: 900;
     line-height: 100%;
     text-transform: uppercase;
-    font-size: 24px;
+    @include adaptiv-font(24, 16);
     color: #333;
     padding: 20px 40px;
     background-color: #fecc01;
@@ -49,32 +48,22 @@ body.lock {
         }
     }
     @media (max-width: 480px) {
-        font-size: 16px;
         padding: 20px 20px;
     }
 }
 .text {
     font-weight: 900;
     line-height: 130%;
-    font-size: 24px;
+    @include adaptiv-font(24, 14);
     font-family: 'Lato', sans-serif;
     color: white;
-    @media (max-width: 480px) {
-        font-size: 14px;
-    }
 }
 .title {
     font-weight: 900;
     line-height: 130%;
     text-transform: uppercase;
     color: #333;
-    font-size: 96px;
-    @media (max-width: 768px) {
-        font-size: 58px;
-    }
-    @media (max-width: 480px) {
-        font-size: 32px;
-    }
+    @include adaptiv-font(96, 32);
     span {
         color: #fecc01;
     }
@@ -85,25 +74,17 @@ body.lock {
     text-transform: uppercase;
     color: #fff;
     font-size: 64px;
+    @include adaptiv-font(64, 32);
     span {
         color: #f04438;
     }
-    @media (max-width: 768px) {
-        font-size: 48px;
-    }
-    @media (max-width: 480px) {
-        font-size: 32px;
-    }
 }
 .small-text {
-    font-size: 20px;
+    @include adaptiv-font(20, 14);
     font-family: 'Lato', sans-serif;
     font-weight: 700;
     line-height: 130%;
     color: #333;
-    @media (max-width: 480px) {
-        font-size: 14px;
-    }
 }
 
 @import './sections/intro';

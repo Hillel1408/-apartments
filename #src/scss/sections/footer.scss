@@ -12,15 +12,9 @@
         line-height: 130%;
         text-transform: uppercase;
         color: white;
-        font-size: 40px;
+        @include adaptiv-font(40, 20);
         span {
             color: #fecc01;
-        }
-        @media (max-width: 768px) {
-            font-size: 30px;
-        }
-        @media (max-width: 480px) {
-            font-size: 20px;
         }
     }
     img {
