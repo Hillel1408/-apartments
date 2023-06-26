@@ -1,14 +1,11 @@
 .step-4 {
-    padding-top: 120px;
-    padding-bottom: 118px;
-    min-height: 879px;
+    @include adaptiv-value(padding-top, 118, 60, 1);
+    @include adaptiv-value(padding-bottom, 120, 60, 1);
     background-color: #171717;
     background-image: url('../img/bg-5.png');
     background-size: cover;
     overflow: hidden;
     @media (max-width: 480px) {
-        padding-top: 60px;
-        padding-bottom: 60px;
         min-height: auto;
         background-image: url('../img/bg-19.png');
         background-repeat: no-repeat;

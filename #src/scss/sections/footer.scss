@@ -1,12 +1,8 @@
 .footer {
     background-color: #171717;
-    padding-top: 112px;
-    padding-bottom: 120px;
     text-align: center;
-    @media (max-width: 480px) {
-        padding-top: 60px;
-        padding-bottom: 60px;
-    }
+    @include adaptiv-value(padding-top, 112, 60, 1);
+    @include adaptiv-value(padding-bottom, 120, 60, 1);
     &__sub-title {
         font-weight: 900;
         line-height: 130%;

@@ -1,5 +1,5 @@
 .step-8 {
-    padding-top: 120px;
+    @include adaptiv-value(padding-top, 120, 60, 1);
     padding-bottom: 120px;
     background-color: #f4f6f7;
     background-image: url('../img/bg-7.png');
@@ -9,7 +9,6 @@
         background-image: none;
     }
     @media (max-width: 480px) {
-        padding-top: 60px;
         padding-bottom: 312px;
         background-image: url('../img/bg-14.png');
         background-position: right bottom;

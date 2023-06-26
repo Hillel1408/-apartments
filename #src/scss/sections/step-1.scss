@@ -1,6 +1,6 @@
 .step-1 {
-    padding-top: 120px;
     padding-bottom: 120px;
+    @include adaptiv-value(padding-top, 120, 60, 1);
     min-height: 1144px;
     background-image: url('../img/bg-2.jpg');
     background-size: cover;
@@ -12,7 +12,6 @@
         background-position: top center;
     }
     @media (max-width: 480px) {
-        padding-top: 60px;
         padding-bottom: 460px;
         background-image: url('../img/bg-12.jpg');
         background-size: contain;

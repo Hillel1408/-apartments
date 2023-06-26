@@ -1,11 +1,9 @@
 .step-5 {
-    padding-top: 122px;
-    padding-bottom: 120px;
+    @include adaptiv-value(padding-top, 118, 60, 1);
+    @include adaptiv-value(padding-bottom, 120, 60, 1);
     overflow: hidden;
     position: relative;
     @media (max-width: 480px) {
-        padding-top: 60px;
-        padding-bottom: 60px;
         &::before {
             content: url('../img/bg-17.png');
             position: absolute;

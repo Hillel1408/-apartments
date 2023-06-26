@@ -1,12 +1,11 @@
 .step-6 {
-    padding-top: 120px;
     padding-bottom: 138px;
+    @include adaptiv-value(padding-top, 120, 20, 1);
     background-image: url('../img/bg-6.png');
     background-size: cover;
     overflow: hidden;
     position: relative;
     @media (max-width: 480px) {
-        padding-top: 20px;
         padding-bottom: 206px;
         background-image: url('../img/bg-15.png');
     }
