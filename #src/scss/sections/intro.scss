@@ -1,5 +1,5 @@
 .intro {
-    padding-top: 163px;
+    @include adaptiv-value(padding-top, 163, 22, 1);
     padding-bottom: 162px;
     background-image: url('../img/bg-1.jpg');
     background-size: cover;
@@ -7,7 +7,6 @@
     position: relative;
     overflow: hidden;
     @media (max-width: 480px) {
-        padding-top: 22px;
         padding-bottom: 419px;
         background-image: url('../img/bg-10.jpg');
         background-position: inherit;
