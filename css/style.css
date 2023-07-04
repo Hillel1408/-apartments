@@ -100,6 +100,9 @@ h6 {
   font-size: inherit;
 }
 
+body {
+  position: relative;
+}
 body.lock {
   overflow: hidden;
 }
@@ -246,6 +249,96 @@ body.lock {
                 ((100vw - 320px) / 1200)
         );
   }
+}
+
+.video {
+  width: 130px;
+  height: 180px;
+  position: fixed;
+  right: 25px;
+  bottom: 25px;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.2) 0 10px 20px;
+          box-shadow: rgba(0, 0, 0, 0.2) 0 10px 20px;
+  border: 2px solid #e4c69c;
+  overflow: hidden;
+  border-radius: 10px;
+  z-index: 1;
+  -webkit-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s;
+  cursor: pointer;
+}
+.video:hover {
+  -webkit-transform: scale(1.1);
+      -ms-transform: scale(1.1);
+          transform: scale(1.1);
+}
+.video video {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.video.active {
+  width: 230px;
+  height: 380px;
+}
+.video.active .video__close {
+  display: none;
+}
+.video.active .video__close-2 {
+  display: block;
+}
+.video.active button {
+  display: block;
+}
+.video button {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  display: none;
+}
+.video__close, .video__close-2 {
+  position: absolute;
+  top: 6px;
+  right: 6px;
+  width: 20px;
+  height: 20px;
+  z-index: 250;
+  opacity: 0.6;
+}
+.video__close:before, .video__close-2:before {
+  -webkit-transform: rotate(45deg);
+      -ms-transform: rotate(45deg);
+          transform: rotate(45deg);
+}
+.video__close:after, .video__close-2:after {
+  -webkit-transform: rotate(-45deg);
+      -ms-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+}
+.video__close:before, .video__close:after, .video__close-2:before, .video__close-2:after {
+  position: absolute;
+  left: 9px;
+  top: 1px;
+  content: "";
+  height: 18px;
+  width: 2px;
+  background: #00102e;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.5) 1px 1px 10px;
+          box-shadow: rgba(0, 0, 0, 0.5) 1px 1px 10px;
+}
+.video__close-2 {
+  display: none;
+}
+.video__close-2:before {
+  display: none;
+}
+.video__close-2:after {
+  -webkit-transform: rotate(-90deg);
+      -ms-transform: rotate(-90deg);
+          transform: rotate(-90deg);
 }
 
 .intro {

@@ -15,3 +15,22 @@ popupClose &&
         popup.classList.toggle('open');
         document.body.classList.toggle('lock');
     });
+
+const video = document.querySelector('.video');
+const videoClose = document.querySelector('.video__close');
+const videoClose2 = document.querySelector('.video__close-2');
+const a = video.childNodes[5];
+
+video.addEventListener('click', function () {
+    a.muted = !a.muted;
+    this.classList.toggle('active');
+});
+
+videoClose2.addEventListener('click', function () {
+    this.classList.toggle('active');
+});
+
+videoClose.addEventListener('click', function () {
+    video.style.display = 'none';
+    a.muted = !a.muted;
+});
