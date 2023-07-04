@@ -23,6 +23,7 @@ const a = video.childNodes[5];
 
 video.addEventListener('click', function () {
     a.muted = !a.muted;
+    a.currentTime = 0;
     this.classList.toggle('active');
 });
 

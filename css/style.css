@@ -1486,6 +1486,9 @@ body.lock {
       -ms-transform: scale(1.1);
           transform: scale(1.1);
 }
+.video:hover .video__close {
+  display: block;
+}
 .video video {
   width: 100%;
   height: 100%;
@@ -1541,6 +1544,9 @@ body.lock {
   background: #00102e;
   -webkit-box-shadow: rgba(0, 0, 0, 0.5) 1px 1px 10px;
           box-shadow: rgba(0, 0, 0, 0.5) 1px 1px 10px;
+}
+.video__close {
+  display: none;
 }
 .video__close-2 {
   display: none;
