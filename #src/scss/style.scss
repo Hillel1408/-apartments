@@ -6,8 +6,11 @@ $minWidth: 360;
 $maxWidthContainer: 1520;
 $maxWidth: 1920;
 
-body.lock {
-    overflow: hidden;
+body {
+    position: relative;
+    &.lock {
+        overflow: hidden;
+    }
 }
 .container {
     max-width: 1560px;
@@ -97,6 +100,7 @@ body.lock {
 @import './sections/step-7';
 @import './sections/step-8';
 @import './sections/popup';
+@import './sections/video';
 @import './sections/footer';
 
 @import './pages/pdf';
